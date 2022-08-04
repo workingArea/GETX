@@ -52,7 +52,8 @@ class HomePage extends StatelessWidget {
                         keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10)),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                         ),
                         onChanged: (value) {
                           if (value.isEmpty) {
@@ -125,7 +126,7 @@ class math_cards extends StatelessWidget {
   final Color color;
   late String onTap;
 
-  final ctrl = Get.put(HomeController());
+  final ctrl = Get.find<HomeController>();
 
   @override
   Widget build(BuildContext context) {
